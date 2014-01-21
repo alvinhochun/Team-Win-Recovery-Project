@@ -8,6 +8,7 @@
 #include <unistd.h>
 #include <sys/stat.h>
 #include <dirent.h>
+#include <errno.h>
 #include "gui/rapidxml.hpp"
 #include "twrp-functions.hpp"
 
@@ -27,6 +28,9 @@ class fixPermissions {
 		int fixDataApps();
 		int fixAllFiles(string directory, int gid, int uid, string file_perms);
 		int fixDataData(string dataDir);
+		int fixDataDataContexts(void);
+		int restorecon(std::string entry, struct stat *sb);
+
 		struct package {
 			string pkgName;
 			string codePath;
