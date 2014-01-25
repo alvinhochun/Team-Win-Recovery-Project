@@ -192,6 +192,7 @@ static void * input_thread(void *cookie)
 	blankTimer.setTimerThread();
 	DataManager::GetValue("tw_screen_timeout_secs", seconds);
 	blankTimer.setTime(atoi(seconds.c_str()));
+	blankTimer.resetTimerAndUnblank();
 #else
 	LOGINFO("Skipping screen timeout threads: TW_NO_SCREEN_TIMEOUT is set\n");
 #endif
