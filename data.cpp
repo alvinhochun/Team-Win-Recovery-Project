@@ -584,6 +584,9 @@ void DataManager::SetDefaultValues()
 	mConstValues.insert(make_pair(TW_VERSION_VAR, TW_VERSION_STR));
 	mValues.insert(make_pair("tw_storage_path", make_pair("/", 1)));
 
+	mConstValues.insert(make_pair(MR_VERSION_VAR, MR_VERSION_STR));
+	mConstValues.insert(make_pair(MR_PRODUCT_DEVICE_VAR, MR_PRODUCT_DEVICE));
+
 #ifdef TW_FORCE_CPUINFO_FOR_DEVICE_ID
 	printf("TW_FORCE_CPUINFO_FOR_DEVICE_ID := true\n");
 #endif

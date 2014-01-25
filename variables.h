@@ -19,6 +19,12 @@
 
 #define TW_VERSION_STR              "2.6.3.0"
 
+#define MR_PRODUCT_DEVICE_VAR       "multirom_prod"
+#define MR_VERSION_STR              "0"
+#define MR_VERSION_VAR              "multirom_version"
+#define MR_ROM_VAR                  "tw_multirom_rom"
+#define MR_ROMSELECTED_VAR          "tw_multirom_romselected"
+
 #define TW_USE_COMPRESSION_VAR      "tw_use_compression"
 #define TW_FILENAME                 "tw_filename"
 #define TW_ZIP_INDEX                "tw_zip_index"
